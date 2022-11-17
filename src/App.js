@@ -14,11 +14,11 @@ import store from './redux/store';
 function App() {
   return (
     <Provider store={store}>
-      {/* <Navbar /> */}
+      <Navbar />
       <Switch>
         <Route path="/products/:id" component={ProductDetails} />
         <Route path="/products" component={Store} />
-        {/* <Route path="/cart" component={ShopCart} /> */}
+        <Route path="/cart" component={ShopCart} />
         <Redirect to="/products" />
       </Switch>
     </Provider>
