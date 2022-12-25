@@ -5,9 +5,6 @@ import { useSelector, useDispatch } from 'react-redux';
 // Components
 import Cart from './shared/Cart';
 
-// Context
-// import { CartContext } from '../context/CartContextProvider';
-
 // Style
 import styles from './ShopCart.module.css';
 
@@ -15,7 +12,6 @@ import styles from './ShopCart.module.css';
 import { clear, checkout } from '../redux/cart/cartAction';
 
 const ShopCart = () => {
-  // const { state, dispatch } = useContext(CartContext);
   const dispatch = useDispatch();
   const state = useSelector((state) => state.cartState);
 

@@ -5,9 +5,6 @@ import { useDispatch, useSelector } from 'react-redux';
 // Functions
 import { shorten, isInCart, quantityCount } from '../../helper/functions';
 
-// // Context
-// import { CartContext } from '../../context/CartContextProvider';
-
 // Icons
 import trashIcon from '../../assets/icons/trash.svg';
 
@@ -23,7 +20,6 @@ import {
 } from '../../redux/cart/cartAction';
 
 const Product = ({ productData }) => {
-  // const { state, dispatch } = useContext(CartContext);
   const state = useSelector((state) => state.cartState);
   const dispatch = useDispatch();
 
